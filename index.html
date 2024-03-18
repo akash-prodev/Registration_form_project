@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="icon" href="/icons/title_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+<div class="container">
+    <header><h2>Sign up</h2></header>
+    <nav>
+        <p class="arrow"></p>
+        <p class="arrowLine"></p>
+    </nav>
+    <main>
+    <!-- Icons will represent the status -->
+    <div class="status">
+        <P class="connector1"></P>
+        <img src="/icons/user.png" alt="username">
+        <P class="connector2"></P>
+        <img src="/icons/email.png" alt="email">
+        <P class="connector2"></P>
+        <img src="/icons/password.png" alt="password">
+        <P class="connector2"></P>
+        <img src="/icons/success.png" alt="success">
+        <P class="connector1"></P>
+    </div>
+    <!-- Username page -->
+    <section class="username section">
+    <div class="pageRef">
+    <h3>Username</h3>
+    <p><i>Username is your online identity</i></p>
+    </div>
+    <UL class="rules">
+        <li>Your username should only contain letters, numbers, underscores and hyphens.</li>
+        <li>No spaces or special characters allowed.</li>
+        <li>Your username should not be offensive or contain profanity.</li>
+    </UL>
+    <form>
+        <label for="username">Username</label><br>
+        <input type="text" id="uname" name="uname" placeholder="Username" required>
+    <div class="formAlign">
+        <label for="firstname">Firstname</label><br>
+        <input type="text" id="fname" name="fname" placeholder="First name" required>
+        <label for="firstname">Lastname</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Last name (Optional)">
+    </div>
+    </form> 
+    </section>
+    <!-- Email page -->
+    <section class="email section">
+    <div class="pageRef">
+    <h3>Email</h3>
+    <p><i>Email is the gateway to your digital life</i></p>
+    </div>
+    <UL class="rules">
+        <li>Please enter valid email in the format "example@example.com".</li>
+        <li>We value your privacy and will never use your email for any unauthorized purposes.</li>
+        <li>Please don't use email that belong to someone else.</li>
+        <li>Please don't use email that includes personal personal information</li>
+    </UL>
+    <form>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+    </form> 
+    </section>
+    <!-- Password page -->
+    <section class="password section">
+    <div class="pageRef">
+    <h3>Password</h3>
+    <p><i>A password is used to prove one's identity, or authorize access to a resource.</i></p>
+    </div>
+    <ul class="rules">
+        <li>At least 8 characters.</li>
+        <li>At least one small letter.</li>
+        <li>At least one capital letter.</li>
+        <li>At least one number or symbol.</li>
+    </ul>
+    <form class="formAlign">
+        <label for="password">Password:</label>
+        <input type="password" class="pwd" id="pwd" name="pwd" placeholder="password" required>
+        <label for="password">Password:</label>
+        <input type="password" class="pwd" id="confirmPwd" name="pwd" placeholder="Confirm password" required>
+    </form>
+    </section>
+    <!-- Success page -->
+    <section class="success section">
+    <div class="pageRef">
+    <h3>Success</h3>
+    <div class="thanks">
+    <p><h2>Thanks for signing up.</h2></p>
+    <p>We'll keep you posted on the latest device tips, product updates, news and special <aside>offers.</aside></p>
+    </div>
+    </div>
+    <div class="end">
+    <button class="ok" type="button"><b>Ok</b></button>
+    </div> 
+    </section>
+</main>
+<Footer><button class="next"><h3>Next</h3></button></Footer> 
+</div>
+</body>
+</html>

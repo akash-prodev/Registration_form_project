@@ -1,0 +1,198 @@
+/*Page reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Full body styles */
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw; 
+    background-image: linear-gradient(skyblue, violet); 
+    
+}
+
+/* Container styles */
+.container{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 550px;
+    height: 550px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Image styles */
+img{
+    width: 50px;
+    height: 50px;
+    translate: 0px -18px;
+}
+
+/* header styles */
+header{
+    text-align: center;
+    padding: 2rem;
+    padding-bottom: 0;
+}
+
+/* nav styles */
+nav{
+    translate: 15px -50px;
+    padding: 1rem;
+    opacity: 0;
+}
+
+/* Back arrow */
+.arrow{
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 12px;
+    height: 12px;
+    transform: rotate(40deg);
+}
+
+.arrowLine {
+    border: 1px solid black;
+    width: 20px;
+    translate: 2px -6.4px;
+}
+
+/* Connectors for status representers */
+.connector1{
+    height: 5px;
+    width: 30px;
+    border: 1px solid black;
+}
+
+.connector2{
+    height: 5px;
+    width: 60px;
+    border: 1px solid black;
+}
+
+.status > p:nth-child(1){
+    background-color: black;
+}
+
+.status{
+    display: flex;    
+    justify-content: center;
+    gap:0.5em;
+}
+
+/* Default state of pages */
+.username{
+    display: block;
+}
+
+.email, .password, .success{
+    display: none;
+}
+
+/* Styles for page reference element */
+.pageRef{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Styles for input rules */
+.rules{
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;  
+}
+
+
+
+/* Form label styles */
+label{
+    display: none;
+}
+
+/* Input styles */
+#uname, #email{
+    width: 95%;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    
+}
+
+#email, .pwd{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#fname, #lname{
+    width: 45%;
+    padding: 10px;
+    margin-right: 14px;    
+}
+
+.pwd{
+    width: 48%;
+    margin-right: 1px;
+}
+
+#uname, #fname, #lname, #email, .pwd{
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+
+
+.formAlign{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* styles for success page */
+.thanks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    gap: 0.5em;
+}
+
+/* styles for success page "ok" button */
+.ok{
+    padding: 10px;
+    width: 60px;
+    margin: 20px;
+    border-radius: 10px;
+    background-image: linear-gradient(skyblue, violet); 
+    
+}
+
+.end{
+    text-align: center;
+  }
+
+/* Footer */
+.next{
+    padding: 10px;
+    border-radius: 12px;
+    background-image: linear-gradient(skyblue, violet); 
+    
+}
+
+Footer{
+    text-align: end;
+    margin: 30px;
+    margin-top: 20px;
+    
+}
+
